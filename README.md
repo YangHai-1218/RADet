@@ -1,6 +1,6 @@
 # RADet
 
-This is the offical code for [''Rigidity-Aware Detection for 6D Object Pose Estimation''](https://arxiv.org/pdf/2303.12396.pdf) (CVPR 2023).
+**This** is the offical code for [''Rigidity-Aware Detection for 6D Object Pose Estimation''](https://arxiv.org/pdf/2303.12396.pdf) (CVPR 2023).
 
 [Yang Hai](https://yanghai-1218.github.io), Rui Song, Jiaojiao Li, [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann) and  [Yinlin Hu](https://yinlinhu.github.io).
 
@@ -32,7 +32,7 @@ This code has been tested on a `ubuntu 18.04` server with `CUDA 11.3`
   For example, collect the PBR images for YCB-V dataset:
 
 ```shell
-python tools/collect_image_list.py --source-dir data/ycbv/train_pbr --save-path data/ycbv/detector_annotations/train_pbr.json --image-list image_lists/train_pbr.txt --pattern */rgb/*.png
+python tools/collect_image_list.py --source-dir data/ycbv/train_pbr --save-path data/ycbv/detector_annotations/train_pbr.json --pattern */rgb/*.png
 ```
 
 - Convert BOP annotations into COCO format.
