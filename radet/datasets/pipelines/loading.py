@@ -5,9 +5,9 @@ import numpy as np
 import random
 import pycocotools.mask as maskUtils
 
-from mmdet.core import BitmapMasks, PolygonMasks
+from radet.core import BitmapMasks, PolygonMasks
 from ..builder import PIPELINES
-from mmdet.ops import GDT_box2distance, MBD_box2distance
+from radet.ops import GDT_box2distance, MBD_box2distance
 import torch
 
 from matplotlib import pyplot as plt

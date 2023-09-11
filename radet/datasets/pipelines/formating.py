@@ -6,7 +6,7 @@ import mmcv
 import numpy as np
 import torch
 from mmcv.parallel import DataContainer as DC
-from mmdet.core.mask.structures import BitmapMasks
+from radet.core.mask.structures import BitmapMasks
 from ..builder import PIPELINES
 
 

@@ -1,8 +1,8 @@
 import torch
 from mmcv.ops.nms import batched_nms
-from mmdet.ops import vote_nms
+from radet.ops import vote_nms
 
-from mmdet.core.bbox.iou_calculators import bbox_overlaps
+from radet.core.bbox.iou_calculators import bbox_overlaps
 
 
 def multiclass_nms(multi_bboxes,
