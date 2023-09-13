@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import math
 from ..builder import PIPELINES
-from mmdet.core.anchor import build_anchor_generator
+from radet.core.anchor import build_anchor_generator
 
 from PIL import ImageDraw, ImageColor, Image
 from matplotlib import pyplot as plt

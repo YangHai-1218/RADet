@@ -68,7 +68,7 @@ def build_model_from_cfg(config_path, checkpoint_path):
     Returns:
         torch.nn.Module: the built model
     """
-    from mmdet.models import build_detector
+    from radet.models import build_detector
 
     cfg = mmcv.Config.fromfile(config_path)
     # import modules from string list.

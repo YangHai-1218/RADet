@@ -8,7 +8,7 @@ from mmcv.runner import Hook
 from torch.nn.modules.batchnorm import _BatchNorm
 from torch.utils.data import DataLoader
 
-from mmdet.utils import get_root_logger
+from radet.utils import get_root_logger
 
 
 class EvalHook(Hook):
@@ -138,7 +138,7 @@ class EvalHook(Hook):
     def after_train_epoch(self, runner):
         if not self.by_epoch or not self.evaluation_flag(runner):
             return
-        from mmdet.apis import single_gpu_test
+        from radet.apis import single_gpu_test
         results = single_gpu_test(runner.model, self.dataloader, show=False)
         key_score = self.evaluate(runner, results)
         if self.save_best:
@@ -147,7 +147,7 @@ class EvalHook(Hook):
     def after_train_iter(self, runner):
         if self.by_epoch or not self.every_n_iters(runner, self.interval):
             return
-        from mmdet.apis import single_gpu_test
+        from radet.apis import single_gpu_test
         results = single_gpu_test(runner.model, self.dataloader, show=False)
         key_score = self.evaluate(runner, results)
         if self.save_best:
@@ -259,7 +259,7 @@ class DistEvalHook(EvalHook):
         if self.broadcast_bn_buffer:
             self._broadcast_bn_buffer(runner)
 
-        from mmdet.apis import multi_gpu_test
+        from radet.apis import multi_gpu_test
         tmpdir = self.tmpdir
         if tmpdir is None:
             tmpdir = osp.join(runner.work_dir, '.eval_hook')
@@ -281,7 +281,7 @@ class DistEvalHook(EvalHook):
         if self.broadcast_bn_buffer:
             self._broadcast_bn_buffer(runner)
 
-        from mmdet.apis import multi_gpu_test
+        from radet.apis import multi_gpu_test
         tmpdir = self.tmpdir
         if tmpdir is None:
             tmpdir = osp.join(runner.work_dir, '.eval_hook')

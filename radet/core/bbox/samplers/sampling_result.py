@@ -1,6 +1,6 @@
 import torch
 
-from mmdet.utils import util_mixins
+from radet.utils import util_mixins
 
 
 class SamplingResult(util_mixins.NiceRepr):
@@ -111,9 +111,9 @@ class SamplingResult(util_mixins.NiceRepr):
             >>> self = SamplingResult.random()
             >>> print(self.__dict__)
         """
-        from mmdet.core.bbox.samplers.random_sampler import RandomSampler
-        from mmdet.core.bbox.assigners.assign_result import AssignResult
-        from mmdet.core.bbox import demodata
+        from radet.core.bbox.samplers.random_sampler import RandomSampler
+        from radet.core.bbox.assigners.assign_result import AssignResult
+        from radet.core.bbox import demodata
         rng = demodata.ensure_rng(rng)
 
         # make probabalistic?
