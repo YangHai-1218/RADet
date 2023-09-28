@@ -4,6 +4,10 @@
 
 [Yang Hai](https://yanghai-1218.github.io), Rui Song, Jiaojiao Li, [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann) and  [Yinlin Hu](https://yinlinhu.github.io).
 
+**Update**: To combine RADet with WDR-Pose, please check [PseudoFlow](https://github.com/YangHai-1218/PseudoFlow) !
+
+## Introduction
+
 Most recent 6D object pose estimation methods first use object detection to obtain 2D bounding boxes before actually regressing the pose. However, the general object detection methods they use are ill-suited to handle cluttered scenes, thus producing poor initialization to the subsequent pose network.
 
 <div align="center">
