@@ -4,7 +4,7 @@
 
 [Yang Hai](https://yanghai-1218.github.io), Rui Song, Jiaojiao Li, [Mathieu Salzmann](https://people.epfl.ch/mathieu.salzmann) and  [Yinlin Hu](https://yinlinhu.github.io).
 
-**Update**: To combine RADet with WDR-Pose, please check [PseudoFlow](https://github.com/YangHai-1218/PseudoFlow) !
+**Update**: We have released the code for combining RADet with [WDR-Pose](https://arxiv.org/abs/2104.00337), which is a part of the Best Single-Model Solution for BOP Challenge 2022. Please check out [PseudoFlow](https://github.com/YangHai-1218/PseudoFlow)!
 
 ## Introduction
 
