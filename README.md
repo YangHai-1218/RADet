@@ -1,4 +1,4 @@
-<h1 align="center"> Rigidity-Aware Detection for 6D Object Pose Estimation </h1>
+<h1 align="center"> Rigidity-Aware Detection for 6D Object Pose Estimation (CVPR 2023) </h1>
 <h5 align="center"><a href="https://yanghai-1218.github.io">Yang Hai</a>, Rui Song, Jiaojiao Li, <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>, <a href="https://yinlinhu.github.io">Yinlin Hu</a></h5>
 
 <p align="center">
