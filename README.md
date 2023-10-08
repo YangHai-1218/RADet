@@ -7,9 +7,8 @@
   <a href="https://www.youtube.com/watch?v=XgDFmE8AL_Y&t=9s">Video</a>
 </p>
 
+📢 **NEWS**: We have released the code for combining RADet with [WDR-Pose](https://arxiv.org/abs/2104.00337), which is a part of the Best Single-Model Solution for BOP Challenge 2022. Please check out [PseudoFlow](https://github.com/YangHai-1218/PseudoFlow)!
 
-# Update
-- We have released the code for combining RADet with [WDR-Pose](https://arxiv.org/abs/2104.00337), which is a part of the Best Single-Model Solution for BOP Challenge 2022. Please check out [PseudoFlow](https://github.com/YangHai-1218/PseudoFlow)!
 
 # Introduction
 
