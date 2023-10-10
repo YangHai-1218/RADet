@@ -40,7 +40,7 @@ This code has been tested on a `ubuntu 18.04` server with `CUDA 11.3`
   For example, collect the PBR images for YCB-V dataset:
 
 ```shell
-python tools/collect_image_list.py --source-dir data/ycbv/train_pbr --save-path data/ycbv/image_lists/train_pbr.txt --pattern */rgb/*.png
+python tools/collect_image_list.py --source-dir data/ycbv/train_pbr --save-path data/ycbv/image_lists/train_pbr.txt --pattern '*/rgb/*.png'
 ```
 - Collect BOP image file lists for the desired dataset.
   
@@ -48,7 +48,7 @@ python tools/collect_image_list.py --source-dir data/ycbv/train_pbr --save-path 
 ```shell
 python tools/collect_bop_imagelist.py data/ycbv/test_bop19.json data/ycbv/image_lists/test_bop19.txt --ext png
 ```
-- Convert BOP annotations into COCO format.
+- Convert BOP annotations into COCO format for both training(train_pbr/train_real) and testing(test_bop19).
 
 ```shell
 python tools/bop_to_coco.py --images-dir data/ycbv/train_pbr --images-list data/ycbv/images_list/train_pbr.txt --save-path data/ycbv/detector_annotations/train_pbr.json --dataset ycbv

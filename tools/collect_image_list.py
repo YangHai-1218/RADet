@@ -17,7 +17,7 @@ if __name__ =='__main__':
     args = parse_args()
     image_list = glob(osp.join(args.source_dir, args.pattern))
     image_list = sorted(image_list)
-    image_list = [i.replace(args.source_dir, '')+'\n' for i in image_list]
+    image_list = [i.replace(args.source_dir+'/', '')+'\n' for i in image_list]
     print(f"Total {len(image_list)} images found")
     with open(args.save_path, 'w') as f:
         f.writelines(image_list)

@@ -40,7 +40,7 @@ def parse_args():
     parser.add_argument('--save-path', default='data/hb/detector_annotations/train_pbr.json', type=str)
     parser.add_argument('--segmentation', action='store_true', help='collect segmentation info or not')
     parser.add_argument('--without-gt', action='store_true')
-   
+    parser.add_argument('--amodal', action='store_true', help='whether to use amodal bbox')
     parser.add_argument('--dataset', choices=['icbin', 'tudl', 'tless', 'lmo', 'itodd', 'hb', 'ycbv'])
     args = parser.parse_args()
     return args
@@ -235,7 +235,7 @@ def save_test_annotation(txt_file, save_path, category_info):
 
 if __name__ == '__main__':
     args = parse_args()
-    data_root, txt, seg_collect, thread_num = args.images_dir, args.images_list, args.segmentation, args.thread_num
+    data_root, txt, seg_collect = args.images_dir, args.images_list, args.segmentation
     dataset = args.dataset
     if args.amodal:
         bbox_key = 'bbox_visib'
